@@ -45,7 +45,7 @@
         <li><span data-filter=".adaptive">Адаптивное</span></li>
         <li><span data-filter=".etc">разное</span></li>
       </ul>
-      <div id="container" class="grid-container">
+      <div class="grid-container">
         <div class="grid animated slide-right del2">
           <div class="grid-item eshop adaptive"><a href="works/shoes" target="_blank" class="item-cont">
               <div class="alt-description">
@@ -146,7 +146,7 @@
                 </div>
               </div>
               <div class="item-pic"><img src="i/this.jpg"/></div></a></div>
-          <div class="grid-item etc"><a href="/" target="_blank" class="item-cont">
+          <div class="grid-item etc"><a href="works/html_practice/index.html#3d" target="_blank" class="item-cont">
               <div class="alt-description">
                 <div class="alt-content">
                   <h3>html штуки</h3>
@@ -200,8 +200,8 @@
       </div>
     </div>
   </body>
-  <script src="/libs/js/jquery.js"></script>
-  <script src="/libs/js/jquery.waypoints.min.js"></script>
+  <script src="libs/js/jquery.js"></script>
+  <script src="libs/js/jquery.waypoints.min.js"></script>
   <script src="libs/js/isotope.pkgd.min.js"></script>
   <script>
     $(document).mouseup(function (e)
@@ -235,7 +235,7 @@
     });
     
     $(document).ready(function(){
-      $('#container').isotope({
+      $('.grid').isotope({
         itemSelector: '.grid-item',
         layoutMode: 'fitRows',
         transitionDuration: '0.8s'
@@ -244,7 +244,7 @@
     
     $('.cats span').click(function(){
       var filterValue = $(this).attr('data-filter');
-      $('#container').isotope({
+      $('.grid').isotope({
         filter: filterValue
       });
     });
