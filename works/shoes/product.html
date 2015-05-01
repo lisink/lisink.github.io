@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jade templating</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="libs/jRange/jquery.range.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+    <link rel="stylesheet" href="css/jade_practice_style.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <ul class="contacts">
+          <li class="phone"><a href="tel:090 - 223 44 66">090 - 223 44 66</a></li>
+          <li class="addr"><a href="mailto:help@trendd.com">help@trendd.com</a></li>
+        </ul>
+        <div class="logo-container"><a href="index.html" class="logo"><span>brand</span><span>logo</span></a>
+          <div class="members">
+            <div class="cart-wrap"><a href="#" class="cart"></a></div><a href="#" class="login">login</a><a href="#" class="register">register</a>
+          </div>
+        </div>
+        <nav>
+          <ul class="menu">
+            <li><a href="sub.html">products</a>
+            </li>
+            <li><a href="#">campaings</a>
+            </li>
+            <li><a href="#">services</a>
+            </li>
+            <li><a href="#">brands</a>
+            </li>
+            <li><a href="#">about us</a>
+            </li>
+            <li class="search">
+              <input type="text" name="" placeholder="Search">
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="content">
+      <div class="filter-container">
+        <div class="products-filter">
+          <div class="filter-logo">filter</div>
+          <div class="filter-content">
+            <div class="filter-brands">
+              <h3>brands</h3>
+              <ul class="brands-col">
+                <li><a href="#">adidas</a></li>
+                <li><a href="#">nike</a></li>
+                <li><a href="#">camper</a></li>
+                <li><a href="#">superga</a></li>
+                <li><a href="#">timberland</a></li>
+                <li><a href="#">new balance</a></li>
+                <li><a href="#">conversem</a></li>
+                <li><a href="#">puma</a></li>
+                <li><a href="#">kinetix</a></li>
+              </ul>
+              <ul class="brands-col">
+                <li><a href="#">tiger</a></li>
+                <li><a href="#">lacoste</a></li>
+                <li><a href="#">reebok</a></li>
+                <li><a href="#">cat</a></li>
+                <li><a href="#">dockers</a></li>
+              </ul>
+            </div>
+            <div class="filter-categories">
+              <div class="products-category woman">
+                <div class="category-content">
+                  <h3>woman</h3>
+                  <div class="category-pic"></div>
+                  <ul>
+                    <li>
+                      <p class="total">total</p>
+                    </li>
+                    <li>
+                      <p class="count">357 products</p>
+                    </li>
+                    <li><a href="#" class="category-icon"></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="products-category man">
+                <div class="category-content">
+                  <h3>man</h3>
+                  <div class="category-pic"></div>
+                  <ul>
+                    <li>
+                      <p class="total">total</p>
+                    </li>
+                    <li>
+                      <p class="count">857 products</p>
+                    </li>
+                    <li><a href="#" class="category-icon"></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="products-category kids">
+                <div class="category-content">
+                  <h3>kids</h3>
+                  <div class="category-pic"></div>
+                  <ul>
+                    <li>
+                      <p class="total">total</p>
+                    </li>
+                    <li>
+                      <p class="count">255 products</p>
+                    </li>
+                    <li><a href="#" class="category-icon"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="filter-select">
+              <div class="color-select">
+                <h3>select color</h3>
+                <ul class="colors">
+                  <li style="background-color:#E82026"></li>
+                  <li style="background-color:#F9A058"></li>
+                  <li style="background-color:#7520E8"></li>
+                  <li style="background-color:#4C3D31"></li>
+                  <li style="background-color:#58A8F9"></li>
+                  <li style="background-color:#DBE47B"></li>
+                  <li style="background-color:#610B0E"></li>
+                  <li style="background-color:#781C70"></li>
+                  <li style="background-color:#1B334C"></li>
+                  <li style="background-color:#517737"></li>
+                  <li style="background-color:#060606"></li>
+                  <li style="background-color:#1A6A0B"></li>
+                  <li style="background-color:#BD8B7A"></li>
+                  <li style="background-color:#A0629F"></li>
+                  <li style="background-color:#074A74"></li>
+                  <li style="background-color:#BEADAD"></li>
+                  <li style="background-color:#F65812"></li>
+                  <li style="background-color:#C4DA0F"></li>
+                  <li style="background-color:#377377"></li>
+                </ul>
+              </div>
+              <div class="price-select">
+                <h3>price range</h3>
+                <div class="slider-wrapper">
+                  <input type="hidden" name="" value="44,190" class="slider-input">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-container">
+        <div class="product-card">
+          <h2>Men'sFootwear</h2>
+          <h3>Hookset Handcrafted Fabric Chukka</h3>
+          <div class="product-preview">
+            <div class="preview-pics">
+              <div class="preview-pic"><img src="i/big1.jpg" class="preview"><img src="i/timber.png" class="brand-logo"></div>
+              <ul class="preview-thumbs">
+                <li>
+                  <div href="big1.jpg" class="thumb active"><img src="i/th3.jpg"></div>
+                </li>
+                <li>
+                  <div href="big4.jpg" class="thumb"><img src="i/th2.jpg"></div>
+                </li>
+                <li>
+                  <div href="big5.jpg" class="thumb"><img src="i/th1.jpg"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="product-description">
+            <div class="price-block">
+              <div class="product-price">
+                <div class="star-rating">
+                  <ul class="stars">
+                    <li class="star active"></li>
+                    <li class="star active"></li>
+                    <li class="star active"></li>
+                    <li class="star"></li>
+                    <li class="star"></li>
+                  </ul><a href="#" class="reviews">
+                     
+                    read <span class="count">8 </span>reviews</a>
+                </div>
+                <div class="old-price">174.00</div>
+                <div class="actual-price">109.00</div>
+              </div>
+              <div class="discount"><img src="i/pig.png">
+                <p>save&nbsp;<span>40%</span></p>
+              </div>
+            </div>
+            <div class="order-block">
+              <p>This is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here,e </p>
+              <div>
+                <div class="shipping">free shipping</div>
+              </div>
+              <div class="cart-add">
+                <div class="select-controls">
+                  <div class="select-wrapper">
+                    <p>size</p>
+                    <div class="select size">select size
+                      <ul class="select-dropdown">
+                        <li>small</li>
+                        <li>medium</li>
+                        <li>large</li>
+                        <li>xlarge</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="select-wrapper">
+                    <p>qty</p>
+                    <div class="select qty">1
+                      <ul class="select-dropdown">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>7</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div><a href="#" class="add">Add to cart</a>
+              </div>
+              <div class="share">
+                <p>Share this</p>
+                <ul class="share-buttons">
+                  <li><a href="#" class="fb"></a></li>
+                  <li><a href="#" class="tw"></a></li>
+                  <li><a href="#" class="mail"></a></li>
+                  <li><a href="#" class="print"></a></li>
+                  <li><a href="#" class="more"></a></li>
+                  <li><a href="#" class="total">1.8M</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-overview">
+          <ul class="tabs-head">
+            <li><span href="#tab1">product overview</span></li>
+            <li><span href="#tab2">features</span></li>
+            <li><span href="#tab3">customers review</span></li>
+          </ul>
+          <div class="tabs-content">
+            <div id="tab1" class="tab">
+              <h2>description</h2>
+              <p>With its beautiful premium leather, lace-up oxford styling, recycled rubber outsoles and 9-inch height, this Earthkeepers® City Premium style is an undeniably handsome boot. To complement its rustic, commanding outer appearance, we've paid attention to the inside as well - by adding SmartWool® faux shearling to the linings and crafting the footbed using our exclusive anti-fatigue comfort foam technology to absorb shock. Imported.</p>
+              <h3>details</h3>
+              <ul class="details">
+                <li>Premium burnished full-grain leather and suede upper</li>
+                <li>Leather is from a tannery rated Silver for its water, energy and waste-management practices</li>
+                <li>Leather lining and footbed for a premium feel and optimal comfort</li>
+                <li>SmartWool® faux shearling lining is made with 60% merino wool and 40% PET</li>
+                <li>Reflective insole board for additional warmth under foot</li>
+                <li>100% organic cotton laces</li>
+                <li>SmartWool® fabric-lined anti-fatigue footbed provides superior, all-day comfort and climate control</li>
+                <li>Timberland® exclusive Gripstick™ and Green Rubber™ outsole is made with 42% recycled rubber</li>
+              </ul>
+            </div>
+            <div id="tab2" class="tab">
+              <h2>Features</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ex, eos harum animi voluptates quo libero commodi neque unde praesentium minima magni delectus corporis. Unde, distinctio, corporis, sed non veniam dolorum provident saepe delectus facilis architecto laborum omnis praesentium quae deleniti aspernatur. Veniam, quaerat, architecto amet ducimus et natus commodi! Similique, perferendis praesentium sequi vitae dolores. Veritatis, quasi, enim nostrum culpa tempore dolorum animi excepturi eum eligendi natus non facilis explicabo debitis sed aliquam magni itaque! Quia, nulla, suscipit, omnis tenetur sunt asperiores nesciunt similique molestiae iure eius ad animi reprehenderit dolore sequi explicabo voluptatem itaque magnam qui? Veritatis, molestiae, non, molestias, quisquam esse optio iure repellat labore et perferendis fugit dicta itaque! Sapiente repellat saepe dolorum iure sit culpa atque odit rerum! Aliquam, explicabo?</p>
+            </div>
+            <div id="tab3" class="tab">
+              <h2>Details</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ex, eos harum animi voluptates quo libero commodi neque unde praesentium minima magni delectus corporis. Unde, distinctio, corporis, sed non veniam dolorum provident saepe delectus facilis architecto laborum omnis praesentium quae</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ex, eos harum animi voluptates quo libero commodi neque unde praesentium minima magni delectus corporis. Unde, distinctio, corporis, sed non veniam dolorum provident saepe delectus facilis architecto laborum omnis praesentium quae</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo"><a href="index.html" class="logo"><span>brand</span><span>logo</span></a></div>
+        <ul class="footer-nav">
+          <li><a href="#">about us</a></li>
+          <li><a href="#">faq</a></li>
+          <li><a href="#">terms and conditions</a></li>
+          <li><a href="#">secure payments</a></li>
+          <li><a href="#">shipping</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+        <ul class="social">
+          <li><a href="#" class="pinterest"></a></li>
+          <li><a href="#" class="twitter"></a></li>
+          <li><a href="#" class="facebook"></a></li>
+        </ul>
+      </div>
+    </footer>
+    <div class="page-links">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="sub.html">Каталог</a></li>
+        <li><a href="product.html">Страница товара</a></li>
+      </ul>
+      <div class="links-toggle">!</div>
+    </div>
+    <script src="libs/dist/jquery.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="libs/jRange/jquery.range.js"></script>
+    <script>
+      $('.slider-input').jRange({
+        from: 0,
+        to: 250,
+        step: 1,
+        width: 200,
+        format: '%s $',
+        showLabels: true,
+        showScale: false,
+        isRange : true,
+        theme: 'theme-user'
+      });
+    </script>
+  </body>
+</html>

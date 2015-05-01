@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jade templating</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+    <link rel="stylesheet" href="css/jade_practice_style.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <ul class="contacts">
+          <li class="phone"><a href="tel:090 - 223 44 66">090 - 223 44 66</a></li>
+          <li class="addr"><a href="mailto:help@trendd.com">help@trendd.com</a></li>
+        </ul>
+        <div class="logo-container"><a href="index.html" class="logo"><span>brand</span><span>logo</span></a>
+          <div class="members">
+            <div class="cart-wrap"><a href="#" class="cart"></a></div><a href="#" class="login">login</a><a href="#" class="register">register</a>
+          </div>
+        </div>
+        <nav>
+          <ul class="menu">
+            <li><a href="sub.html">products</a>
+            </li>
+            <li><a href="#">campaings</a>
+            </li>
+            <li><a href="#">services</a>
+            </li>
+            <li><a href="#">brands</a>
+            </li>
+            <li><a href="#">about us</a>
+            </li>
+            <li class="search">
+              <input type="text" name="" placeholder="Search">
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="content">
+      <section class="slider allow-overflow"><a class="prev"></a><a class="next"></a>
+        <div class="slider-box">
+          <div class="slide">
+            <div class="slide-container"><img src="i/slide-pic.png" class="slide-pic">
+              <div class="slide-description">
+                <h1><span>will</span><span>helm</span></h1>
+                <h2>winter</h2>
+                <div class="buy-button"><a href="#" class="price">99.90</a><a href="product.html" class="get">get now</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-container"><img src="i/slide-pic2.png" class="slide-pic pic2">
+              <div class="slide-description">
+                <h1><span>fast</span><span>ner<i class="num">2</i></span></h1>
+                <h2>dress shoe</h2>
+                <div class="buy-button"><a href="#" class="price">199.90</a><a href="product.html" class="get">get now</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-container"><img src="i/slide-pic.png" class="slide-pic">
+              <div class="slide-description">
+                <h1><span>kill</span><span>helm</span></h1>
+                <h2>winter</h2>
+                <div class="buy-button"><a href="#" class="price">699.90</a><a href="product.html" class="get">get now</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-container"><img src="i/slide-pic2.png" class="slide-pic pic2">
+              <div class="slide-description">
+                <h1><span>bill</span><span>helm</span></h1>
+                <h2>winter</h2>
+                <div class="buy-button"><a href="#" class="price">199.90</a><a href="product.html" class="get">get now</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="products">
+        <div class="products-container">
+          <div class="products-categories">
+            <div class="products-category woman">
+              <div class="category-content">
+                <h3>woman</h3>
+                <div class="category-pic"></div>
+                <ul>
+                  <li>
+                    <p class="total">total</p>
+                  </li>
+                  <li>
+                    <p class="count">357 products</p>
+                  </li>
+                  <li><a href="#" class="category-icon"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="products-category man">
+              <div class="category-content">
+                <h3>man</h3>
+                <div class="category-pic"></div>
+                <ul>
+                  <li>
+                    <p class="total">total</p>
+                  </li>
+                  <li>
+                    <p class="count">416 products</p>
+                  </li>
+                  <li><a href="#" class="category-icon"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="products-category kids">
+              <div class="category-content">
+                <h3>kids</h3>
+                <div class="category-pic"></div>
+                <ul>
+                  <li>
+                    <p class="total">total</p>
+                  </li>
+                  <li>
+                    <p class="count">357 products</p>
+                  </li>
+                  <li><a href="#" class="category-icon"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="products-list special-products">
+            <div class="product-items">
+              <h2><span>special </span><span>products</span></h2>
+              <div class="view-all"><a href="#">view all products</a></div>
+              <div class="product">
+                <div class="product-content">
+                  <div class="product-brand nike"></div>
+                  <div class="product-pic"><img src="i/b1.jpg"/></div>
+                  <div class="hr"></div>
+                  <div class="product-name">
+                    <div class="name">Nike Roshe Run Premium Holiday </div>
+                  </div>
+                  <div class="buy-button"><a href="#" class="price">99.9</a><a href="product.html" class="get">get now</a></div>
+                </div>
+              </div>
+              <div class="product active">
+                <div class="product-content">
+                  <div class="product-brand camper"></div>
+                  <div class="product-pic"><img src="i/b4.jpg"/></div>
+                  <div class="hr"></div>
+                  <div class="product-name">
+                    <div class="name">Nike Roshe Run Premium Holiday </div>
+                  </div>
+                  <div class="buy-button"><a href="#" class="price">199.9</a><a href="product.html" class="get">get now</a></div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product-content">
+                  <div class="product-brand nbalance"></div>
+                  <div class="product-pic"><img src="i/b2.jpg"/></div>
+                  <div class="hr"></div>
+                  <div class="product-name">
+                    <div class="name">Minimus Zero</div>
+                  </div>
+                  <div class="buy-button"><a href="#" class="price">199.9</a><a href="product.html" class="get">get now</a></div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product-content">
+                  <div class="product-brand converse"></div>
+                  <div class="product-pic"><img src="i/b3.jpg"/></div>
+                  <div class="hr"></div>
+                  <div class="product-name">
+                    <div class="name">Converse   Athletic Shoe</div>
+                  </div>
+                  <div class="buy-button"><a href="#" class="price">399.9</a><a href="product.html" class="get">get now</a></div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product-content">
+                  <div class="product-brand camper"></div>
+                  <div class="product-pic"><img src="i/b11.jpg"/></div>
+                  <div class="hr"></div>
+                  <div class="product-name">
+                    <div class="name">super boots</div>
+                  </div>
+                  <div class="buy-button"><a href="#" class="price">99.99</a><a href="product.html" class="get">get now</a></div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product-content">
+                  <div class="product-brand supegra"></div>
+                  <div class="product-pic"><img src="i/b12.jpg"/></div>
+                  <div class="hr"></div>
+                  <div class="product-name">
+                    <div class="name">super boots</div>
+                  </div>
+                  <div class="buy-button"><a href="#" class="price">199.9</a><a href="product.html" class="get">get now</a></div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product-content">
+                  <div class="product-brand puma"></div>
+                  <div class="product-pic"><img src="i/b13.jpg"/></div>
+                  <div class="hr"></div>
+                  <div class="product-name">
+                    <div class="name">super boots</div>
+                  </div>
+                  <div class="buy-button"><a href="#" class="price">199.9</a><a href="product.html" class="get">get now</a></div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product-content">
+                  <div class="product-brand adidas"></div>
+                  <div class="product-pic"><img src="i/b14.jpg"/></div>
+                  <div class="hr"></div>
+                  <div class="product-name">
+                    <div class="name">super boots</div>
+                  </div>
+                  <div class="buy-button"><a href="#" class="price">399.9</a><a href="product.html" class="get">get now</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo"><a href="index.html" class="logo"><span>brand</span><span>logo</span></a></div>
+        <ul class="footer-nav">
+          <li><a href="#">about us</a></li>
+          <li><a href="#">faq</a></li>
+          <li><a href="#">terms and conditions</a></li>
+          <li><a href="#">secure payments</a></li>
+          <li><a href="#">shipping</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+        <ul class="social">
+          <li><a href="#" class="pinterest"></a></li>
+          <li><a href="#" class="twitter"></a></li>
+          <li><a href="#" class="facebook"></a></li>
+        </ul>
+      </div>
+    </footer>
+    <div class="page-links">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="sub.html">Каталог</a></li>
+        <li><a href="product.html">Страница товара</a></li>
+      </ul>
+      <div class="links-toggle">!</div>
+    </div>
+    <script src="libs/dist/jquery.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
