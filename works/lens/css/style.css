@@ -1,0 +1,39 @@
+.wrapper {
+	width: 600px;
+	margin: 20px auto 180px;
+	text-align: center;
+	
+}   
+  
+.has-lens {
+	cursor: zoom-in;
+	
+}   
+.img-wrapper {
+	display: inline-block;
+}   
+
+.lens {
+	display: none;
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	top: 0;
+	left: 0;
+	border: 13px solid #aaa;
+	border-radius: 50%;
+	box-shadow:   inset 0 0 13px 5px #ccc,  0 0 0 3px #999;
+}   
+
+.lens:after {
+	content: "";
+	position: absolute;
+	right: -60px;
+	bottom: 0;
+	display: block;
+	width: 75px;
+	height: 18px;
+	background: #aaa;
+	transform: rotate(35deg);
+	box-shadow:  3px 3px 0 0 #999, 3px -3px 0 0 #999;
+}
