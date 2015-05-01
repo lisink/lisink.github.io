@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Volga it task</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Лисин Константин, УлГТУ">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/volga_it_task_style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans|Roboto:300">
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <ul class="links">
+          <li><a href="http://2012.nastachku.ru/">2012</a></li>
+          <li><a href="http://2013.nastachku.ru/">2013</a></li>
+          <li><a href="#">купить футболку</a></li>
+        </ul>
+        <ul class="social-links">
+          <li class="fb"><a href="https://www.facebook.com/nastachku">f</a></li>
+          <li class="tw"><a href="https://twitter.com/it73ru">t</a></li>
+          <li class="vk"><a href="http://vk.com/nastachku">B</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="main">
+      <section class="registration-panel">
+        <div class="registration-container"><a href="#" class="logo"></a>
+          <ul class="social-links">
+            <li class="fb"><a href="https://www.facebook.com/nastachku">f</a></li>
+            <li class="tw"><a href="https://twitter.com/it73ru">t</a></li>
+            <li class="vk"><a href="http://vk.com/nastachku">B</a></li>
+          </ul><a href="#" class="register ripple">Зарегистрироваться</a>
+        </div>
+      </section>
+      <section class="modals">
+        <div class="modal registration-modal">
+          <div class="modal-wrapper">
+            <div class="modal-close"></div>
+            <div class="modal-content">
+              <h3>регистрация</h3>
+              <form id="registration-form" action="" method="POST">
+                <input type="text" id="first-name" name="first-name" value="" placeholder="Мое имя" maxlength="64" required>
+                <input type="text" id="last-name" name="last-name" value="" placeholder="Фамилия" maxlength="64" required>
+                <input type="text" id="email" name="email" value="" placeholder="Ваш адрес электронной почты" maxlength="128" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$" title="Введите корректный email" required>
+                <input type="password" id="password" name="password" value="" placeholder="Придумайте пароль" maxlength="32" pattern=".{8,}" title="Пароль должен содержать не менее восьми символов" required>
+                <input type="password" id="pass_confirm" name="pass_confirm" value="" placeholder="Повторите пароль" maxlength="32" pattern=".{8,}" title="Повторите пароль" required>
+                <p>Нажимая на кнопку «Зарегистрироваться», вы подтверждаете свое согласия с условиями предоставления услуг (пользовательское соглашение)</p>
+                <input id="#submit" type="submit" name="submit" value="зарегистрироваться">
+              </form>
+            </div>
+            <div class="modal-message">Уже зарегистрировались?&nbsp;<a href="#" class="login">Войти в кабинет</a></div>
+          </div>
+        </div>
+        <div class="modal success-modal">
+          <div class="modal-wrapper">
+            <div class="modal-close"></div>
+            <div class="modal-content">
+              <h3>успешная операция</h3>
+              <p>Все так и вам удалось! Примите наши искренние поздравления! Теперь нажимаем “ОК”!</p>
+              <button class="ok">ок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <div id="ya-map"></div>
+        <div class="announcement">
+          <h1>Регистрация на Стачку 2014 открыта!</h1>
+          <p><span class="date">11-12 апреля,</span>&nbsp;Ульяновск, Ленинский Мемориал</p>
+        </div>
+        <div class="questions"><img src="i/question.png" alt="Вопросы и предложения"></div>
+      </section>
+      <section class="about">
+        <div class="about-container">
+          <h2>Что такое Стачка?</h2>
+          <ul class="about-links">
+            <li class="about-link"><a href="etc/pr.pdf" download>
+                <div class="link-description ripple">Для участников
+                </div></a></li>
+            <li class="about-link"><a href="etc/pr.pdf" download>
+                <div class="link-description ripple">Для докладчиков (RU)
+                </div></a></li>
+            <li class="about-link"><a href="etc/pr.pdf" download>
+                <div class="link-description ripple">For speaker (EN)
+                </div></a></li>
+            <li class="about-link"><a href="etc/pr.pdf" download>
+                <div class="link-description ripple">Для спонсоров
+                </div></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="last-year">
+        <div class="video-container"><a class="video-toggle ripple">Видео: «Стачка 2013: Как это было?»</a>
+          <div class="video-wrapper">
+            <video controls>
+              <source src="etc/stach_2013.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2>Организаторы</h2>
+        <div class="contacts-col">
+          <ul class="sponsor-group">
+            <li class="sponsor"><a href="http://mstagency.ru/" class="ripple"><img src="i/sponsor_mst.png" alt="MST digital agency"></a></li>
+            <li class="sponsor"><a href="#" class="ripple"><img src="i/sponsor_mmedia.png" alt="My media company"></a></li>
+            <li class="sponsor"><a href="https://platidoma.ru/" class="ripple"><img src="i/sponsor_pay.png" alt="ПлатиДома"></a></li>
+          </ul>
+          <ul class="sponsor-group">
+            <li class="sponsor"><a href="#" class="ripple"><img src="i/sponsor_dev.png" alt="Некоммерческое партнерство содйствия развитию IT"></a></li>
+            <li class="sponsor"><a href="http://www.simbirsoft.com/ruru/" class="ripple"><img src="i/sponsor_simb.png" alt="Симбирсофт"></a></li>
+          </ul>
+        </div>
+        <div class="contacts-col">
+          <ul class="sponsor-group">
+            <li class="sponsor"><a href="http://www.simtech.ru/" class="ripple"><img src="i/sponsor_simt.png" alt="simtech"></a></li>
+            <li class="sponsor"><a href="#" class="ripple"><img src="i/sponsor_itm.png" alt="Itm group"></a></li>
+            <li class="sponsor"><a href="http://interra-group.ru/" class="ripple"><img src="i/sponsor_interra.png" alt="interra group"></a></li>
+          </ul>
+          <ul class="sponsor-group">
+            <li class="sponsor"><a href="#" class="ripple"><img src="i/sponsor_zen.png" alt="Кайдзен"></a></li>
+            <li class="sponsor"><a href="http://www.creater.ru/" class="ripple"><img src="i/sponsor_creater.png" alt="Веб-студия Creater"></a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <ul class="social-links">
+          <li class="fb"><a href="https://www.facebook.com/nastachku">f</a></li>
+          <li class="tw"><a href="https://twitter.com/it73ru">t</a></li>
+          <li class="vk"><a href="http://vk.com/nastachku">B</a></li>
+          <li class="gp"><a href="#">g+</a></li>
+        </ul><span class="copy">&copy; Стачка 2014</span><a href="mailto:info@nastachku.ru">info@nastachku.ru</a>
+      </div>
+    </footer>
+    <script src="js/jquery-2.1.0.js"></script>
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

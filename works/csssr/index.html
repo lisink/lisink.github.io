@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSSSR form task</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/csssr_form_style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header><img src="i/csssr-logo.png" alt="CSSSR" width="154" height="59" class="csssr"><img src="i/secret.png" alt="" width="252" height="106" class="secret"></header>
+      <div class="main">
+        <div class="caption"><img src="i/caption.png" alt="" width="219" height="110" border="0"></div>
+        <form action="/" method="POST">
+          <fieldset class="main-info">
+            <div class="field">
+              <label for="name">Полное ФИО</label><span>
+                <input type="text" id="name" value="Лисин Константин Владимирович"></span>
+            </div>
+            <div class="field">
+              <label for="year">Год рождения</label><span>
+                <input type="text" id="year" value="1992"></span>
+            </div>
+            <div class="field">
+              <label for="address">Место жительства</label><span>
+                <input type="text" id="address" value="г. Ульяновск, Россия"></span>
+            </div>
+            <div class="field">
+              <label for="skype">Скайп</label><span>
+                <input type="text" id="skype" value="wh1t3snake"></span>
+            </div>
+            <div class="field">
+              <label for="email">Почта</label><span>
+                <input type="email" id="email" value="sandman73@yandex.ru"></span>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="field"><span class="graduate">Выпускник <a href="http://www.htmlacademy.ru">htmlacademy.ru</a></span>
+              <label class="radio-wrapper">
+                <input type="radio" name="is-graduate" value="yes" checked>Да
+                <div class="radio"></div>
+              </label>
+              <label class="radio-wrapper">
+                <input type="radio" name="is-graduate" value="no">Нет
+                <div class="radio"></div>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="practical">
+            <h2>Практические навыки</h2>
+            <p class="description">
+              Отметьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутсвие опыта отнюдь не означает, что у
+              вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано
+              будете справляться.
+            </p>
+            <div class="columns">
+              <div class="column">
+                <label class="checkbox-wrapper">Методолгия БЭМ
+                  <input type="checkbox" name="bem">
+                  <div class="checkbox"></div></label>
+                <label class="checkbox-wrapper">jQuery
+                  <input type="checkbox" checked>
+                  <div class="checkbox"></div></label>
+                <label class="checkbox-wrapper">Использую GRUNT
+                  <input type="checkbox" checked>
+                  <div class="checkbox"></div></label>
+                <label class="checkbox-wrapper">HAML
+                  <input type="checkbox">
+                  <div class="checkbox"></div></label>
+                <label class="checkbox-wrapper">SASS
+                  <input type="checkbox" checked>
+                  <div class="checkbox"></div></label>
+                <label class="checkbox-wrapper">LESS
+                  <input type="checkbox">
+                  <div class="checkbox"></div></label>
+                <label class="checkbox-wrapper">CoffeeScript
+                  <input type="checkbox">
+                  <div class="checkbox"></div></label>
+              </div>
+              <div class="column">
+                <label class="checkbox-wrapper">Jade
+                  <input type="checkbox" checked>
+                  <div class="checkbox"></div></label>
+                <label class="checkbox-wrapper">Stylus
+                  <input type="checkbox">
+                  <div class="checkbox"></div></label>
+                <label class="checkbox-wrapper">Знаю(изучаю) Angular
+                  <input type="checkbox">
+                  <div class="checkbox"></div></label>
+                <label class="checkbox-wrapper">Верстка под Android
+                  <input type="checkbox">
+                  <div class="checkbox"></div></label>
+                <label class="checkbox-wrapper">Верстка под IOS
+                  <input type="checkbox">
+                  <div class="checkbox"></div></label>
+                <label class="checkbox-wrapper">Верстка под Windows Phone
+                  <input type="checkbox">
+                  <div class="checkbox"></div></label>
+              </div>
+              <div class="column">
+                <label class="checkbox-wrapper">Верстка рассылок
+                  <input type="checkbox">
+                  <div class="checkbox"></div></label>
+                <label class="checkbox-wrapper">Адаптивная верстка
+                  <input type="checkbox" checked>
+                  <div class="checkbox"></div></label>
+                <label class="checkbox-wrapper">Использую Dropbox
+                  <input type="checkbox">
+                  <div class="checkbox"></div></label>
+                <label class="checkbox-wrapper">Использую Gmail
+                  <input type="checkbox">
+                  <div class="checkbox"></div></label>
+                <label class="checkbox-wrapper">Использую Github
+                  <input type="checkbox" checked>
+                  <div class="checkbox"></div></label>
+              </div>
+            </div>
+            <div class="slider-wrapper">
+              <h2>Уровень владения JavaScript</h2>
+              <div class="slider">
+                <div class="token"></div><span class="value">Не владею</span><span class="value">Использую готовые решения</span><span class="value">Использую готовые решения<br>и умею их переделывать</span><span class="value">Пишу сложные скрипты</span>
+              </div>
+            </div>
+            <div class="field date">
+              <label for="date">Дата заполенения</label><span>
+                <input id="date" type="text" name="date" value="20.04.2015"></span>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <script src="js/jquery-2.1.0.js"></script>
+    <script src="js/slider-csssr.js"></script>
+  </body>
+</html>

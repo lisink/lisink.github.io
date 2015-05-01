@@ -1,0 +1,401 @@
+body {
+	background: #E7E7E7;
+	font-family: 'Open Sans', sans-serif;
+}
+::selection{
+	background: #000;
+}
+h1{
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 40px 0;
+  font-size: 2.2rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin: 0 0 30px 0;
+}
+
+main > .pic {
+	background:#E7E7E7 url(../i/logo.png) no-repeat -1px 0;
+	padding: 80px;
+}
+
+header,
+footer {
+	background: #1B2026;
+  color: #fff;
+}
+
+button {
+	outline:none;
+	cursor: pointer;
+}
+
+header .nav li {
+	line-height: 80px;
+	vertical-align: middle;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+header .nav li.active,
+header .nav li:hover {
+	background: #F93B3B;
+}
+
+header .nav a {
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.add .add-person {
+	background: transparent;
+	border: 2px solid #505861;
+	border-radius: 17.5px;
+	outline: none;
+}
+
+.add .add-person:hover {
+	background: #505861;
+}
+
+.add .add-person:active {
+	background: #393F45;
+	border-color: #393F45;
+}
+
+.avatar {
+	background: #FFFFFF url(../i/face.png) no-repeat 0 0;
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	margin: 10px 0;
+	cursor: pointer;
+}
+
+.item {
+  background: #ffffff;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+}
+
+.categories .categories-list{
+	display: table;
+	width: 100%;
+}
+
+:link,
+:visited {
+	color: #000;
+}
+
+
+.categories a {
+	text-decoration: none;
+	display: table-row;
+}
+
+.item a {
+	text-decoration: none;
+}
+
+.categories .categories-item,
+.categories .categories-count {
+	display: table-cell;
+}
+
+ .categories .categories-item {
+ 	width: 75%;
+	padding: 10px 0;
+ }
+
+ .categories .categories-count {
+ 	width: 25%;
+	text-align: right;
+ }
+
+ .record .info,
+ .comments .comment {
+	position: relative;
+ 	padding: 0 0 0 70px ;
+	margin:0 0 20px 0;
+ }
+
+.record .author,
+.comment .comment-author {
+
+	margin:0 0 10px 0;
+}
+.comment .comment-text {
+	margin:0 0 10px 0;
+}
+
+ .comment .comment-theme {
+	margin:0 0 10px 0;
+}
+
+
+.comment .comment-photo {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 0;
+	left: 0;
+	border-radius: 25px;
+	overflow: hidden;
+}
+.posts .post-item {
+	margin:0 0 20px 0;
+}
+.posts .post {
+
+	margin:0 0 10px 0;
+}
+
+.view-more {
+	width: 180px;
+	height: 50px;
+	border-radius: 25px;
+	color: #FFFFFF;
+	background: #F70A0A;
+	border: 0;
+	text-transform: uppercase;
+	margin: 0 20px 0 ;
+}
+
+.view-more:hover {
+	background: #F93B3B;
+}
+
+ .view-more:active {
+	background: #D90303;
+}
+
+.submit {
+	margin: 0 0 0 20px;
+	color: #000;
+}
+
+.record {
+	width: 300px;
+	float: left;
+	position: relative;
+	margin:0 0 30px 0;
+}
+
+
+.record .author {
+	display: inline-block;
+	margin: 0;
+}
+
+.record ul {
+	display: inline-block;
+	padding: 0;
+	margin: 0 0 0 20px;
+	list-style: none;
+	color: #ACAC9D;
+}
+
+.record li {
+	display: inline-block;
+
+}
+
+ .record li .fa {
+	font-size: 1.3rem;
+	vertical-align: sub;
+	margin: 0 5px 0 0;
+}
+
+.record .avatar {
+	position: absolute;
+	top: -25px;
+	left: 0;
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	overflow: hidden;
+}
+
+ .record .info {
+ 	padding: 0 0 0 70px;
+	margin:0 0 40px 0;
+ }
+
+ .record .image {
+ 	position: relative;
+	left: -20px;
+	margin: 0 0 20px 0;
+ }
+
+.content .title {
+
+ 	margin:0 0 10px 0;
+}
+
+.record .theme {
+	margin: 20px 0;
+}
+
+.load-more {
+	width: 300px;
+	display: inline-block;
+	text-align: center;
+}
+
+.footer-nav {
+	border-bottom: 1px solid #79796A;
+
+}
+footer .footer-logo {
+	float: left;
+	padding: 10px 0 0 0;
+}
+footer .nav {
+	list-style: none;
+	color: #ffffff;
+	display: block;
+	float: right;
+	margin:10px 0 0 0;
+}
+
+footer {
+	color: #4F5F71;
+}
+footer .nav li {
+	display: inline-block;
+
+}
+footer .nav li:not(:last-child) {
+	margin:0 20px;
+
+}
+ footer .nav li a{
+	color: #ffffff;
+	text-decoration: none;
+}
+ footer .nav li a:hover{
+	color: #F93B3B;
+}
+
+footer .about {
+	padding: 40px 0;
+}
+
+footer .about .description {
+	margin: 0 0 20px 0;
+}
+footer .about input {
+	width: 100%;
+	height: 45px;
+	margin: 0 0 10px 0;
+	border: 0;
+	outline: none;
+}
+
+footer .description li {
+	margin: 0 0 10px 0;
+
+}
+
+ footer .description li a {
+	text-decoration: none;
+
+}
+.about input[type="email"]{
+	background: #23282E;
+	padding: 0 20px;
+}
+.about input[type="submit"]{
+	background: #2D3844;
+	cursor: pointer;
+
+}
+.about input[type="email"]:focus{
+	background: #FFFFFF;
+	padding: 0 20px;
+}
+
+h3,
+.add .add-person,
+header .nav li {
+	color: #ffffff;
+}
+
+footer,
+footer a:visited,
+footer a:link,
+footer input,
+.date {
+	color: #4F5F71;
+}
+
+.record ul,
+.comment-theme,
+.date {
+	color: #87B2BA;
+}
+
+a:hover,
+footer a:hover,
+.item a:hover div{
+	color: #F93B3B;
+}
+.comment .comment-text,
+.theme {
+	color: #979797;
+}
+
+.content .title{
+	font-size: 1em;
+}
+footer .nav,
+footer .description,
+.author,
+.comment-author,
+.starred,
+.posts .post,
+.date,
+.theme,
+.copy {
+	font-size: 0.8em;
+}
+.comment .comment-text {
+	font-size: 0.75em;
+}
+.comment .comment-theme {
+	font-size: 0.6em;
+}
+
+.nav,
+.date,
+.submit,
+.content .title,
+.posts .post,
+.categories-list,
+.comment .comment-theme,
+.record .author,
+footer .description,
+.comment .comment-author,
+.record .more,
+.load-more,
+.copy,
+.about input[type="email"],
+.about input[type="submit"] {
+	font-weight: bold;
+}
+
+.about input[type="submit"]:hover {
+	background: #333F4D;
+}
+
+ .about input[type="submit"]:active {
+	background: #101417;
+}
