@@ -276,12 +276,12 @@ header {
 .prev {
   left: 70px;
   margin: auto 0;
-  background: url(../i/arrow1.png) 0 0 no-repeat; }
+  background: url(../i/Arrow1.png) 0 0 no-repeat; }
 
 .next {
   right: 70px;
   margin: auto 0;
-  background: url(../i/arrow2.png) 0 0 no-repeat; }
+  background: url(../i/Arrow2.png) 0 0 no-repeat; }
 
 @media screen and (max-width: 999px) {
   .prev {
