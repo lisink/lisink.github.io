@@ -363,7 +363,7 @@ body * {
   font-size: 21px; }
   .soc li {
     display: inline-block; }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 400px) {
       .soc li {
         margin: 0 7px 0 7px; } }
   .soc a {
