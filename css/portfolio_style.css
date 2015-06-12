@@ -363,6 +363,9 @@ body * {
   font-size: 21px; }
   .soc li {
     display: inline-block; }
+    @media screen and (max-width: 320px) {
+      .soc li {
+        margin: 0 7px 0 7px; } }
   .soc a {
     position: relative;
     display: inline-block;
@@ -520,6 +523,9 @@ body * {
   border-radius: 5px;
   background: #fff;
   box-shadow: 0 0 0 7px rgba(210, 210, 210, 0.3); }
+  @media screen and (max-width: 320px) {
+    .contacts {
+      left: 95%; } }
   .contacts:before {
     position: absolute;
     top: -12px;
