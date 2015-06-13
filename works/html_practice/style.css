@@ -1377,3 +1377,117 @@ input[type="text"] {
 .descr {
   text-align: center;
 }
+
+.badge {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: #1BB869;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #3CA65E;
+  text-shadow: 2px 2px 2px #117D47;
+}
+
+.badge-container {
+  margin: 0 0 40px 50px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.badge:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 81px;
+  top: -66px;
+  width: 135px;
+  height: 136px;
+  border-radius: 50%;
+  background-color: #50CE8E;
+  z-index: 10;
+}
+
+.badge:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 84px;
+  top: -40px;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background-color: #127E48;
+  box-shadow: -4px 4px 4px #127E48;
+  z-index: 1;
+}
+
+.badge-container:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 54px;
+  top: -20px;
+  width: 218px;
+  height: 88px;
+  transform: rotate(48deg);
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.badge-caption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font: bold 28px "Open sans", sans-serif;
+  color: #fff;
+
+}
+
+.badge.blue {
+  background-color: #279AC9;
+  border-color: #2083AC;
+  text-shadow: 2px 2px 2px #186381;
+}
+
+.badge.blue:after {
+  background-color: #279AC9;
+}
+
+.badge.blue:before {
+  box-shadow: -4px 4px 4px #1C7497;
+  background-color: #1C7497;
+}
+
+.badge.yellow {
+  background-color: #F6B63A;
+  border-color: #D19B31;
+  text-shadow: 2px 2px 2px #805D1C;
+}
+
+.badge.yellow:after {
+  background-color: #F8C665;
+}
+
+.badge.yellow:before {
+  box-shadow: -4px 4px 4px #D19B31;
+  background-color: #D19B31;
+}
+
+
+.badge.red {
+  background-color: #E15643;
+  border-color: #C0483A;
+  text-shadow: 2px 2px 2px #C0483A;
+}
+
+.badge.red:after {
+  background-color: #E76F5F;
+}
+
+.badge.red:before {
+  box-shadow: -4px 4px 4px #C1493B;
+  background-color: #C1493B;
+}
