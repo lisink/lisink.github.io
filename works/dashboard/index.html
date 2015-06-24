@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700">
+    <link rel="stylesheet" href="css/dashboard_style.css">
+    <link rel="stylesheet" href="js/jquery.mCustomScrollbar.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script>
+      $(function(){
+        $(".tasks, .user-actions").mCustomScrollbar({
+          axis:"y",
+          theme: "minimal-dark"
+        });
+      });
+      
+    </script>
+  </head>
+  <body>
+    <aside class="menu">
+      <ul class="top-menu">
+        <li data-unread="5" class="account unread-news">
+          <div class="avatar"><img src="i/avatar.jpg" style="position: relative;left:-85px;top: -10px;"></div>
+        </li>
+        <li class="board-link active">
+          <div class="icon-wrapper">
+            <div class="icon"> </div>
+          </div>
+          <div class="title">board</div>
+        </li>
+        <li class="divider">
+          <ul class="dots">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </li>
+        <li data-unread="6" class="projects-link unread-news">
+          <div class="icon-wrapper">
+            <div class="icon"> </div>
+          </div>
+          <div class="title">projects</div>
+        </li>
+        <li class="divider">
+          <ul class="dots">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </li>
+        <li class="settings-link">
+          <div class="icon-wrapper">
+            <div class="icon"> </div>
+          </div>
+          <div class="title">settings</div>
+        </li>
+      </ul>
+    </aside>
+    <div class="board">
+      <div class="top-bar">
+        <div class="update"><a href="" class="refresh"></a><a href="" class="dash">dashboard</a></div>
+        <div class="online"><a href="" class="expand"></a><a href="" class="users-online">5 users online</a></div>
+      </div>
+      <div class="content">
+        <div class="tabs">
+          <ul class="tabs-head">
+            <li data-unread="9" class="active active-projects unread-news">active projects</li>
+            <li data-unread="5" class="messenger unread-news">messenger </li>
+          </ul>
+          <div class="search"> 
+            <input type="text" name="" placeholder="Search Project, User, Task, etc..." value="">
+          </div>
+          <div class="tabs-content">
+            <div class="tab1">
+              <div class="main-content">
+                <div class="content-container">
+                  <div class="search-projects">
+                    <input type="text" name="" value="" placeholder="Search a Project with Name, Task, User...">
+                    <div class="options"> 
+                      <div class="select">New Projects <span class="direction">(descending)</span></div>
+                      <div class="add"></div>
+                    </div>
+                  </div>
+                  <ul class="tasks">
+                    <li>
+                      <div class="task-total"><span class="percentage">22</span>%</div>
+                      <div class="task-title">Create Contact Formular</div>
+                      <div class="task-info">
+                        <div class="project-name">worlda</div>
+                        <div class="find"></div>
+                        <div class="expand"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="task-total"><span class="percentage">87</span>%</div>
+                      <div class="task-title">Create Subpage PSD</div>
+                      <div class="task-info">
+                        <div class="project-name">Panorama</div>
+                        <div class="find"></div>
+                        <div class="expand"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="task-total"><span class="percentage">83</span>%</div>
+                      <div class="task-title">Layout &amp; implementation in HTML &amp; CSS</div>
+                      <div class="task-info">
+                        <div class="project-name">Ebay Relaunch</div>
+                        <div class="find"></div>
+                        <div class="expand"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="task-total"><span class="percentage">22</span>%</div>
+                      <div class="task-title">Create Contact Formular</div>
+                      <div class="task-info">
+                        <div class="project-name">worlda</div>
+                        <div class="find"></div>
+                        <div class="expand"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="task-total"><span class="percentage">87</span>%</div>
+                      <div class="task-title">Create Subpage PSD</div>
+                      <div class="task-info">
+                        <div class="project-name">Panorama</div>
+                        <div class="find"></div>
+                        <div class="expand"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="task-total"><span class="percentage">83</span>%</div>
+                      <div class="task-title">Layout &amp; implementation in HTML &amp; CSS</div>
+                      <div class="task-info">
+                        <div class="project-name">Ebay Relaunch</div>
+                        <div class="find"></div>
+                        <div class="expand"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="task-total"><span class="percentage">22</span>%</div>
+                      <div class="task-title">Create Contact Formular</div>
+                      <div class="task-info">
+                        <div class="project-name">worlda</div>
+                        <div class="find"></div>
+                        <div class="expand"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="task-total"><span class="percentage">87</span>%</div>
+                      <div class="task-title">Create Subpage PSD</div>
+                      <div class="task-info">
+                        <div class="project-name">Panorama</div>
+                        <div class="find"></div>
+                        <div class="expand"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="task-total"><span class="percentage">83</span>%</div>
+                      <div class="task-title">Layout &amp; implementation in HTML &amp; CSS</div>
+                      <div class="task-info">
+                        <div class="project-name">Ebay Relaunch</div>
+                        <div class="find"></div>
+                        <div class="expand"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="task-total"><span class="percentage">22</span>%</div>
+                      <div class="task-title">Create Contact Formular</div>
+                      <div class="task-info">
+                        <div class="project-name">worlda</div>
+                        <div class="find"></div>
+                        <div class="expand"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="task-total"><span class="percentage">87</span>%</div>
+                      <div class="task-title">Create Subpage PSD</div>
+                      <div class="task-info">
+                        <div class="project-name">Panorama</div>
+                        <div class="find"></div>
+                        <div class="expand"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="task-total"><span class="percentage">83</span>%</div>
+                      <div class="task-title">Layout &amp; implementation in HTML &amp; CSS</div>
+                      <div class="task-info">
+                        <div class="project-name">Ebay Relaunch</div>
+                        <div class="find"></div>
+                        <div class="expand"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="task-total"><span class="percentage">22</span>%</div>
+                      <div class="task-title">Create Contact Formular</div>
+                      <div class="task-info">
+                        <div class="project-name">worlda</div>
+                        <div class="find"></div>
+                        <div class="expand"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="task-total"><span class="percentage">87</span>%</div>
+                      <div class="task-title">Create Subpage PSD</div>
+                      <div class="task-info">
+                        <div class="project-name">Panorama</div>
+                        <div class="find"></div>
+                        <div class="expand"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="task-total"><span class="percentage">83</span>%</div>
+                      <div class="task-title">Layout &amp; implementation in HTML &amp; CSS</div>
+                      <div class="task-info">
+                        <div class="project-name">Ebay Relaunch</div>
+                        <div class="find"></div>
+                        <div class="expand"></div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="archive"> <span>Project archive</span></div>
+                </div>
+              </div>
+              <div class="users-activity"> 
+                <div class="users-activity-container">
+                  <ul class="user-actions">
+                    <li>
+                      <div class="user on">
+                        <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                        <div class="description"><span class="name">Mark P.</span>&nbsp;add an Image into Worlda</div>
+                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="user on">
+                        <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                        <div class="description"><span class="name">Simon D.</span>&nbsp;Lorem ipsum dolor sit</div>
+                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="user on">
+                        <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                        <div class="description"><span class="name">Ivan M.</span>&nbsp;add an Image into Worlda</div>
+                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="user on">
+                        <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                        <div class="description"><span class="name">Mark P.</span>&nbsp;add an Image into Worlda</div>
+                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="user on">
+                        <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                        <div class="description"><span class="name">Simon D.</span>&nbsp;Lorem ipsum dolor sit</div>
+                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="user on">
+                        <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                        <div class="description"><span class="name">Ivan M.</span>&nbsp;add an Image into Worlda</div>
+                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="user on">
+                        <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                        <div class="description"><span class="name">Mark P.</span>&nbsp;add an Image into Worlda</div>
+                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="user on">
+                        <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                        <div class="description"><span class="name">Simon D.</span>&nbsp;Lorem ipsum dolor sit</div>
+                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="user on">
+                        <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                        <div class="description"><span class="name">Ivan M.</span>&nbsp;add an Image into Worlda</div>
+                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="user on">
+                        <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                        <div class="description"><span class="name">Mark P.</span>&nbsp;add an Image into Worlda</div>
+                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="user on">
+                        <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                        <div class="description"><span class="name">Simon D.</span>&nbsp;Lorem ipsum dolor sit</div>
+                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="user on">
+                        <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                        <div class="description"><span class="name">Ivan M.</span>&nbsp;add an Image into Worlda</div>
+                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="user on">
+                        <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                        <div class="description"><span class="name">Mark P.</span>&nbsp;add an Image into Worlda</div>
+                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="user on">
+                        <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                        <div class="description"><span class="name">Simon D.</span>&nbsp;Lorem ipsum dolor sit</div>
+                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="user on">
+                        <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                        <div class="description"><span class="name">Ivan M.</span>&nbsp;add an Image into Worlda</div>
+                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="archive"> <span>acivity archive</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
