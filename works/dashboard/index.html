@@ -27,7 +27,7 @@
         </li>
         <li class="board-link active">
           <div class="icon-wrapper">
-            <div class="icon"> </div>
+            <div class="icon"></div>
           </div>
           <div class="title">board</div>
         </li>
@@ -40,7 +40,7 @@
         </li>
         <li data-unread="6" class="projects-link unread-news">
           <div class="icon-wrapper">
-            <div class="icon"> </div>
+            <div class="icon"></div>
           </div>
           <div class="title">projects</div>
         </li>
@@ -53,7 +53,7 @@
         </li>
         <li class="settings-link">
           <div class="icon-wrapper">
-            <div class="icon"> </div>
+            <div class="icon"></div>
           </div>
           <div class="title">settings</div>
         </li>
@@ -67,279 +67,456 @@
       <div class="content">
         <div class="tabs">
           <ul class="tabs-head">
-            <li data-unread="9" class="active active-projects unread-news">active projects</li>
-            <li data-unread="5" class="messenger unread-news">messenger </li>
+            <li data-unread="9" data-target="#tab1" class="active active-projects unread-news">active projects</li>
+            <li data-unread="5" data-target="#tab2" class="messenger unread-news">messenger</li>
           </ul>
-          <div class="search"> 
+          <div class="search">
             <input type="text" name="" placeholder="Search Project, User, Task, etc..." value="">
           </div>
           <div class="tabs-content">
-            <div class="tab1">
+            <div id="tab1" class="tab active">
               <div class="main-content">
                 <div class="content-container">
                   <div class="search-projects">
                     <input type="text" name="" value="" placeholder="Search a Project with Name, Task, User...">
-                    <div class="options"> 
-                      <div class="select">New Projects <span class="direction">(descending)</span></div>
+                    <div class="options">
+                      <div class="select">New Projects<span class="direction">(descending)</span></div>
                       <div class="add"></div>
                     </div>
                   </div>
                   <ul class="tasks">
-                    <li>
-                      <div class="task-total"><span class="percentage">22</span>%</div>
-                      <div class="task-title">Create Contact Formular</div>
-                      <div class="task-info">
-                        <div class="project-name">worlda</div>
-                        <div class="find"></div>
-                        <div class="expand"></div>
+                    <li class="hassubs opened">
+                      <div class="task-description">
+                        <div class="task-total"><span class="percentage">22</span>%</div>
+                        <div class="task-title">Create Contact Formular</div>
+                        <div class="task-info">
+                          <div data-tooltip="Project name" class="project-name">worlda</div>
+                          <div data-tooltip="Search in tasks" class="find"></div>
+                          <div class="expand"></div>
+                        </div>
                       </div>
+                      <ul class="subtasks">
+                        <li class="subtask">
+                          <div class="task-total"><span class="percentage">77</span>%</div>
+                          <div class="task-title">Creating context</div>
+                          <div class="task-info">
+                            <div class="user on">
+                              <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                            </div>
+                            <div class="user on">
+                              <div class="pic"><img src="i/avatar3.jpg" style="position: relative;top: 0px; left:-37px;"/></div>
+                            </div>
+                            <div class="user">
+                              <div class="pic"><img src="i/avatar4.jpg" style="position: relative;top: 0px; left:-37px;"/></div>
+                            </div>
+                            <div class="sub-date">Today, 10:35 PM</div>
+                            <div data-tooltip="Search in tasks" class="find"></div>
+                          </div>
+                        </li>
+                      </ul>
                     </li>
-                    <li>
-                      <div class="task-total"><span class="percentage">87</span>%</div>
-                      <div class="task-title">Create Subpage PSD</div>
-                      <div class="task-info">
-                        <div class="project-name">Panorama</div>
-                        <div class="find"></div>
-                        <div class="expand"></div>
+                    <li class=" undefined">
+                      <div class="task-description">
+                        <div class="task-total"><span class="percentage">22</span>%</div>
+                        <div class="task-title">Create Contact Formular</div>
+                        <div class="task-info">
+                          <div data-tooltip="Project name" class="project-name">worlda</div>
+                          <div data-tooltip="Search in tasks" class="find"></div>
+                          <div class="expand"></div>
+                        </div>
                       </div>
+                      <ul class="subtasks">
+                      </ul>
                     </li>
-                    <li>
-                      <div class="task-total"><span class="percentage">83</span>%</div>
-                      <div class="task-title">Layout &amp; implementation in HTML &amp; CSS</div>
-                      <div class="task-info">
-                        <div class="project-name">Ebay Relaunch</div>
-                        <div class="find"></div>
-                        <div class="expand"></div>
+                    <li class="hassubs opened">
+                      <div class="task-description">
+                        <div class="task-total"><span class="percentage">87</span>%</div>
+                        <div class="task-title">Create Subpage PSD</div>
+                        <div class="task-info">
+                          <div data-tooltip="Project name" class="project-name">Panorama</div>
+                          <div data-tooltip="Search in tasks" class="find"></div>
+                          <div class="expand"></div>
+                        </div>
                       </div>
+                      <ul class="subtasks">
+                        <li class="subtask">
+                          <div class="task-total"><span class="percentage">89</span>%</div>
+                          <div class="task-title">Creating PSD template</div>
+                          <div class="task-info">
+                            <div class="user on">
+                              <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                            </div>
+                            <div class="user on">
+                              <div class="pic"><img src="i/avatar3.jpg" style="position: relative;top: 0px; left:-37px;"/></div>
+                            </div>
+                            <div class="user">
+                              <div class="pic"><img src="i/avatar4.jpg" style="position: relative;top: 0px; left:-37px;"/></div>
+                            </div>
+                            <div class="sub-date">Yesterday, 10:35 PM</div>
+                            <div data-tooltip="Search in tasks" class="find"></div>
+                          </div>
+                        </li>
+                        <li class="subtask">
+                          <div class="task-total"><span class="percentage">77</span>%</div>
+                          <div class="task-title">Lorem ipsum dolor</div>
+                          <div class="task-info">
+                            <div class="user on">
+                              <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                            </div>
+                            <div class="user on">
+                              <div class="pic"><img src="i/avatar3.jpg" style="position: relative;top: 0px; left:-37px;"/></div>
+                            </div>
+                            <div class="user">
+                              <div class="pic"><img src="i/avatar4.jpg" style="position: relative;top: 0px; left:-37px;"/></div>
+                            </div>
+                            <div class="sub-date">Today, 14:35 PM</div>
+                            <div data-tooltip="Search in tasks" class="find"></div>
+                          </div>
+                        </li>
+                      </ul>
                     </li>
-                    <li>
-                      <div class="task-total"><span class="percentage">22</span>%</div>
-                      <div class="task-title">Create Contact Formular</div>
-                      <div class="task-info">
-                        <div class="project-name">worlda</div>
-                        <div class="find"></div>
-                        <div class="expand"></div>
+                    <li class=" undefined">
+                      <div class="task-description">
+                        <div class="task-total"><span class="percentage">83</span>%</div>
+                        <div class="task-title">Layout &amp; implementation in HTML &amp; CSS</div>
+                        <div class="task-info">
+                          <div data-tooltip="Project name" class="project-name">Ebay Relaunch</div>
+                          <div data-tooltip="Search in tasks" class="find"></div>
+                          <div class="expand"></div>
+                        </div>
                       </div>
+                      <ul class="subtasks">
+                      </ul>
                     </li>
-                    <li>
-                      <div class="task-total"><span class="percentage">87</span>%</div>
-                      <div class="task-title">Create Subpage PSD</div>
-                      <div class="task-info">
-                        <div class="project-name">Panorama</div>
-                        <div class="find"></div>
-                        <div class="expand"></div>
+                    <li class=" undefined">
+                      <div class="task-description">
+                        <div class="task-total"><span class="percentage">22</span>%</div>
+                        <div class="task-title">Create Contact Formular</div>
+                        <div class="task-info">
+                          <div data-tooltip="Project name" class="project-name">worlda</div>
+                          <div data-tooltip="Search in tasks" class="find"></div>
+                          <div class="expand"></div>
+                        </div>
                       </div>
+                      <ul class="subtasks">
+                      </ul>
                     </li>
-                    <li>
-                      <div class="task-total"><span class="percentage">83</span>%</div>
-                      <div class="task-title">Layout &amp; implementation in HTML &amp; CSS</div>
-                      <div class="task-info">
-                        <div class="project-name">Ebay Relaunch</div>
-                        <div class="find"></div>
-                        <div class="expand"></div>
+                    <li class=" undefined">
+                      <div class="task-description">
+                        <div class="task-total"><span class="percentage">87</span>%</div>
+                        <div class="task-title">Create Subpage PSD</div>
+                        <div class="task-info">
+                          <div data-tooltip="Project name" class="project-name">Panorama</div>
+                          <div data-tooltip="Search in tasks" class="find"></div>
+                          <div class="expand"></div>
+                        </div>
                       </div>
+                      <ul class="subtasks">
+                      </ul>
                     </li>
-                    <li>
-                      <div class="task-total"><span class="percentage">22</span>%</div>
-                      <div class="task-title">Create Contact Formular</div>
-                      <div class="task-info">
-                        <div class="project-name">worlda</div>
-                        <div class="find"></div>
-                        <div class="expand"></div>
+                    <li class=" undefined">
+                      <div class="task-description">
+                        <div class="task-total"><span class="percentage">83</span>%</div>
+                        <div class="task-title">Layout &amp; implementation in HTML &amp; CSS</div>
+                        <div class="task-info">
+                          <div data-tooltip="Project name" class="project-name">Ebay Relaunch</div>
+                          <div data-tooltip="Search in tasks" class="find"></div>
+                          <div class="expand"></div>
+                        </div>
                       </div>
+                      <ul class="subtasks">
+                      </ul>
                     </li>
-                    <li>
-                      <div class="task-total"><span class="percentage">87</span>%</div>
-                      <div class="task-title">Create Subpage PSD</div>
-                      <div class="task-info">
-                        <div class="project-name">Panorama</div>
-                        <div class="find"></div>
-                        <div class="expand"></div>
+                    <li class=" undefined">
+                      <div class="task-description">
+                        <div class="task-total"><span class="percentage">22</span>%</div>
+                        <div class="task-title">Create Contact Formular</div>
+                        <div class="task-info">
+                          <div data-tooltip="Project name" class="project-name">worlda</div>
+                          <div data-tooltip="Search in tasks" class="find"></div>
+                          <div class="expand"></div>
+                        </div>
                       </div>
+                      <ul class="subtasks">
+                      </ul>
                     </li>
-                    <li>
-                      <div class="task-total"><span class="percentage">83</span>%</div>
-                      <div class="task-title">Layout &amp; implementation in HTML &amp; CSS</div>
-                      <div class="task-info">
-                        <div class="project-name">Ebay Relaunch</div>
-                        <div class="find"></div>
-                        <div class="expand"></div>
+                    <li class=" undefined">
+                      <div class="task-description">
+                        <div class="task-total"><span class="percentage">87</span>%</div>
+                        <div class="task-title">Create Subpage PSD</div>
+                        <div class="task-info">
+                          <div data-tooltip="Project name" class="project-name">Panorama</div>
+                          <div data-tooltip="Search in tasks" class="find"></div>
+                          <div class="expand"></div>
+                        </div>
                       </div>
+                      <ul class="subtasks">
+                      </ul>
                     </li>
-                    <li>
-                      <div class="task-total"><span class="percentage">22</span>%</div>
-                      <div class="task-title">Create Contact Formular</div>
-                      <div class="task-info">
-                        <div class="project-name">worlda</div>
-                        <div class="find"></div>
-                        <div class="expand"></div>
+                    <li class=" undefined">
+                      <div class="task-description">
+                        <div class="task-total"><span class="percentage">83</span>%</div>
+                        <div class="task-title">Layout &amp; implementation in HTML &amp; CSS</div>
+                        <div class="task-info">
+                          <div data-tooltip="Project name" class="project-name">Ebay Relaunch</div>
+                          <div data-tooltip="Search in tasks" class="find"></div>
+                          <div class="expand"></div>
+                        </div>
                       </div>
+                      <ul class="subtasks">
+                      </ul>
                     </li>
-                    <li>
-                      <div class="task-total"><span class="percentage">87</span>%</div>
-                      <div class="task-title">Create Subpage PSD</div>
-                      <div class="task-info">
-                        <div class="project-name">Panorama</div>
-                        <div class="find"></div>
-                        <div class="expand"></div>
+                    <li class=" undefined">
+                      <div class="task-description">
+                        <div class="task-total"><span class="percentage">22</span>%</div>
+                        <div class="task-title">Create Contact Formular</div>
+                        <div class="task-info">
+                          <div data-tooltip="Project name" class="project-name">worlda</div>
+                          <div data-tooltip="Search in tasks" class="find"></div>
+                          <div class="expand"></div>
+                        </div>
                       </div>
+                      <ul class="subtasks">
+                      </ul>
                     </li>
-                    <li>
-                      <div class="task-total"><span class="percentage">83</span>%</div>
-                      <div class="task-title">Layout &amp; implementation in HTML &amp; CSS</div>
-                      <div class="task-info">
-                        <div class="project-name">Ebay Relaunch</div>
-                        <div class="find"></div>
-                        <div class="expand"></div>
+                    <li class=" undefined">
+                      <div class="task-description">
+                        <div class="task-total"><span class="percentage">87</span>%</div>
+                        <div class="task-title">Create Subpage PSD</div>
+                        <div class="task-info">
+                          <div data-tooltip="Project name" class="project-name">Panorama</div>
+                          <div data-tooltip="Search in tasks" class="find"></div>
+                          <div class="expand"></div>
+                        </div>
                       </div>
+                      <ul class="subtasks">
+                      </ul>
                     </li>
-                    <li>
-                      <div class="task-total"><span class="percentage">22</span>%</div>
-                      <div class="task-title">Create Contact Formular</div>
-                      <div class="task-info">
-                        <div class="project-name">worlda</div>
-                        <div class="find"></div>
-                        <div class="expand"></div>
+                    <li class=" undefined">
+                      <div class="task-description">
+                        <div class="task-total"><span class="percentage">83</span>%</div>
+                        <div class="task-title">Layout &amp; implementation in HTML &amp; CSS</div>
+                        <div class="task-info">
+                          <div data-tooltip="Project name" class="project-name">Ebay Relaunch</div>
+                          <div data-tooltip="Search in tasks" class="find"></div>
+                          <div class="expand"></div>
+                        </div>
                       </div>
+                      <ul class="subtasks">
+                      </ul>
                     </li>
-                    <li>
-                      <div class="task-total"><span class="percentage">87</span>%</div>
-                      <div class="task-title">Create Subpage PSD</div>
-                      <div class="task-info">
-                        <div class="project-name">Panorama</div>
-                        <div class="find"></div>
-                        <div class="expand"></div>
+                    <li class=" undefined">
+                      <div class="task-description">
+                        <div class="task-total"><span class="percentage">22</span>%</div>
+                        <div class="task-title">Create Contact Formular</div>
+                        <div class="task-info">
+                          <div data-tooltip="Project name" class="project-name">worlda</div>
+                          <div data-tooltip="Search in tasks" class="find"></div>
+                          <div class="expand"></div>
+                        </div>
                       </div>
+                      <ul class="subtasks">
+                      </ul>
                     </li>
-                    <li>
-                      <div class="task-total"><span class="percentage">83</span>%</div>
-                      <div class="task-title">Layout &amp; implementation in HTML &amp; CSS</div>
-                      <div class="task-info">
-                        <div class="project-name">Ebay Relaunch</div>
-                        <div class="find"></div>
-                        <div class="expand"></div>
+                    <li class=" undefined">
+                      <div class="task-description">
+                        <div class="task-total"><span class="percentage">87</span>%</div>
+                        <div class="task-title">Create Subpage PSD</div>
+                        <div class="task-info">
+                          <div data-tooltip="Project name" class="project-name">Panorama</div>
+                          <div data-tooltip="Search in tasks" class="find"></div>
+                          <div class="expand"></div>
+                        </div>
                       </div>
+                      <ul class="subtasks">
+                      </ul>
+                    </li>
+                    <li class=" undefined">
+                      <div class="task-description">
+                        <div class="task-total"><span class="percentage">83</span>%</div>
+                        <div class="task-title">Layout &amp; implementation in HTML &amp; CSS</div>
+                        <div class="task-info">
+                          <div data-tooltip="Project name" class="project-name">Ebay Relaunch</div>
+                          <div data-tooltip="Search in tasks" class="find"></div>
+                          <div class="expand"></div>
+                        </div>
+                      </div>
+                      <ul class="subtasks">
+                      </ul>
+                    </li>
+                    <li class=" undefined">
+                      <div class="task-description">
+                        <div class="task-total"><span class="percentage">22</span>%</div>
+                        <div class="task-title">Create Contact Formular</div>
+                        <div class="task-info">
+                          <div data-tooltip="Project name" class="project-name">worlda</div>
+                          <div data-tooltip="Search in tasks" class="find"></div>
+                          <div class="expand"></div>
+                        </div>
+                      </div>
+                      <ul class="subtasks">
+                      </ul>
+                    </li>
+                    <li class=" undefined">
+                      <div class="task-description">
+                        <div class="task-total"><span class="percentage">87</span>%</div>
+                        <div class="task-title">Create Subpage PSD</div>
+                        <div class="task-info">
+                          <div data-tooltip="Project name" class="project-name">Panorama</div>
+                          <div data-tooltip="Search in tasks" class="find"></div>
+                          <div class="expand"></div>
+                        </div>
+                      </div>
+                      <ul class="subtasks">
+                      </ul>
                     </li>
                   </ul>
-                  <div class="archive"> <span>Project archive</span></div>
+                  <div data-tooltip="View projects tasks archive" class="archive"><span>Project archive</span></div>
                 </div>
               </div>
-              <div class="users-activity"> 
+              <div class="users-activity">
                 <div class="users-activity-container">
                   <ul class="user-actions">
                     <li>
                       <div class="user on">
                         <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
                         <div class="description"><span class="name">Mark P.</span>&nbsp;add an Image into Worlda</div>
-                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                        <div class="date"><span class="day">Today,</span><span class="time">10:30</span><span class="am">PM</span></div>
                       </div>
                     </li>
                     <li>
-                      <div class="user on">
-                        <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                      <div class="user">
+                        <div class="pic"><img src="i/avatar4.jpg" style="position: relative;top: 0px; left:-37px;"/></div>
                         <div class="description"><span class="name">Simon D.</span>&nbsp;Lorem ipsum dolor sit</div>
-                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                        <div class="date"><span class="day">Today,</span><span class="time">10:30</span><span class="am">PM</span></div>
                       </div>
                     </li>
                     <li>
                       <div class="user on">
                         <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
                         <div class="description"><span class="name">Ivan M.</span>&nbsp;add an Image into Worlda</div>
-                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                        <div class="date"><span class="day">Today,</span><span class="time">10:30</span><span class="am">PM</span></div>
                       </div>
                     </li>
                     <li>
                       <div class="user on">
                         <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
                         <div class="description"><span class="name">Mark P.</span>&nbsp;add an Image into Worlda</div>
-                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                        <div class="date"><span class="day">Today,</span><span class="time">10:30</span><span class="am">PM</span></div>
                       </div>
                     </li>
                     <li>
-                      <div class="user on">
-                        <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                      <div class="user">
+                        <div class="pic"><img src="i/avatar4.jpg" style="position: relative;top: 0px; left:-37px;"/></div>
                         <div class="description"><span class="name">Simon D.</span>&nbsp;Lorem ipsum dolor sit</div>
-                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                        <div class="date"><span class="day">Today,</span><span class="time">10:30</span><span class="am">PM</span></div>
                       </div>
                     </li>
                     <li>
                       <div class="user on">
                         <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
                         <div class="description"><span class="name">Ivan M.</span>&nbsp;add an Image into Worlda</div>
-                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                        <div class="date"><span class="day">Today,</span><span class="time">10:30</span><span class="am">PM</span></div>
                       </div>
                     </li>
                     <li>
                       <div class="user on">
                         <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
                         <div class="description"><span class="name">Mark P.</span>&nbsp;add an Image into Worlda</div>
-                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                        <div class="date"><span class="day">Today,</span><span class="time">10:30</span><span class="am">PM</span></div>
                       </div>
                     </li>
                     <li>
-                      <div class="user on">
-                        <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                      <div class="user">
+                        <div class="pic"><img src="i/avatar4.jpg" style="position: relative;top: 0px; left:-37px;"/></div>
                         <div class="description"><span class="name">Simon D.</span>&nbsp;Lorem ipsum dolor sit</div>
-                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                        <div class="date"><span class="day">Today,</span><span class="time">10:30</span><span class="am">PM</span></div>
                       </div>
                     </li>
                     <li>
                       <div class="user on">
                         <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
                         <div class="description"><span class="name">Ivan M.</span>&nbsp;add an Image into Worlda</div>
-                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                        <div class="date"><span class="day">Today,</span><span class="time">10:30</span><span class="am">PM</span></div>
                       </div>
                     </li>
                     <li>
                       <div class="user on">
                         <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
                         <div class="description"><span class="name">Mark P.</span>&nbsp;add an Image into Worlda</div>
-                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                        <div class="date"><span class="day">Today,</span><span class="time">10:30</span><span class="am">PM</span></div>
                       </div>
                     </li>
                     <li>
-                      <div class="user on">
-                        <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                      <div class="user">
+                        <div class="pic"><img src="i/avatar4.jpg" style="position: relative;top: 0px; left:-37px;"/></div>
                         <div class="description"><span class="name">Simon D.</span>&nbsp;Lorem ipsum dolor sit</div>
-                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                        <div class="date"><span class="day">Today,</span><span class="time">10:30</span><span class="am">PM</span></div>
                       </div>
                     </li>
                     <li>
                       <div class="user on">
                         <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
                         <div class="description"><span class="name">Ivan M.</span>&nbsp;add an Image into Worlda</div>
-                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                        <div class="date"><span class="day">Today,</span><span class="time">10:30</span><span class="am">PM</span></div>
                       </div>
                     </li>
                     <li>
                       <div class="user on">
                         <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
                         <div class="description"><span class="name">Mark P.</span>&nbsp;add an Image into Worlda</div>
-                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                        <div class="date"><span class="day">Today,</span><span class="time">10:30</span><span class="am">PM</span></div>
                       </div>
                     </li>
                     <li>
-                      <div class="user on">
-                        <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
+                      <div class="user">
+                        <div class="pic"><img src="i/avatar4.jpg" style="position: relative;top: 0px; left:-37px;"/></div>
                         <div class="description"><span class="name">Simon D.</span>&nbsp;Lorem ipsum dolor sit</div>
-                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                        <div class="date"><span class="day">Today,</span><span class="time">10:30</span><span class="am">PM</span></div>
                       </div>
                     </li>
                     <li>
                       <div class="user on">
                         <div class="pic"><img src="i/avatar2.jpg" style="position: relative;top: -10px; left:-19px;"/></div>
                         <div class="description"><span class="name">Ivan M.</span>&nbsp;add an Image into Worlda</div>
-                        <div class="date"><span class="day">Today, </span><span class="time">10:30 </span><span class="am">PM</span></div>
+                        <div class="date"><span class="day">Today,</span><span class="time">10:30</span><span class="am">PM</span></div>
                       </div>
                     </li>
                   </ul>
-                  <div class="archive"> <span>acivity archive</span></div>
+                  <div data-tooltip="View activity data archive" class="archive"><span>acivity archive</span></div>
                 </div>
+              </div>
+            </div>
+            <div id="tab2" class="tab">
+              <div class="content-container tab2-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, eos, similique, molestias omnis corrupti iusto iure aperiam sunt doloremque accusantium ipsum ex quam tempore animi perferendis atque magnam. Molestias, voluptatibus, repellat, harum enim laborum iusto itaque maxime neque provident eaque magni aut blanditiis odit. Dolorem, tempora, dignissimos assumenda illo totam vel deserunt consequuntur delectus ipsa temporibus earum aliquam ea sunt error quas magni accusamus facere laborum minus quam quisquam placeat consequatur. Itaque, architecto suscipit molestias quod ex officiis minus adipisci magnam. Minus, molestiae adipisci saepe. Eius, omnis, distinctio, consectetur illum in modi laborum quidem magni voluptatibus sequi tempore blanditiis nihil.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, eos, similique, molestias omnis corrupti iusto iure aperiam sunt doloremque accusantium ipsum ex quam tempore animi perferendis atque magnam. Molestias, voluptatibus, repellat, harum enim laborum iusto itaque maxime neque provident eaque magni aut blanditiis odit. Dolorem, tempora, dignissimos assumenda illo totam vel deserunt consequuntur delectus ipsa temporibus earum aliquam ea sunt error quas magni accusamus facere laborum minus quam quisquam placeat consequatur. Itaque, architecto suscipit molestias quod ex officiis minus adipisci magnam. Minus, molestiae adipisci saepe. Eius, omnis, distinctio, consectetur illum in modi laborum quidem magni voluptatibus sequi tempore blanditiis nihil.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, eos, similique, molestias omnis corrupti iusto iure aperiam sunt doloremque accusantium ipsum ex quam tempore animi perferendis atque magnam. Molestias, voluptatibus, repellat, harum enim laborum iusto itaque maxime neque provident eaque magni aut blanditiis odit. Dolorem, tempora, dignissimos assumenda illo totam vel deserunt consequuntur delectus ipsa temporibus earum aliquam ea sunt error quas magni accusamus facere laborum minus quam quisquam placeat consequatur. Itaque, architecto suscipit molestias quod ex officiis minus adipisci magnam. Minus, molestiae adipisci saepe. Eius, omnis, distinctio, consectetur illum in modi laborum quidem magni voluptatibus sequi tempore blanditiis nihil.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, eos, similique, molestias omnis corrupti iusto iure aperiam sunt doloremque accusantium ipsum ex quam tempore animi perferendis atque magnam. Molestias, voluptatibus, repellat, harum enim laborum iusto itaque maxime neque provident eaque magni aut blanditiis odit. Dolorem, tempora, dignissimos assumenda illo totam vel deserunt consequuntur delectus ipsa temporibus earum aliquam ea sunt error quas magni accusamus facere laborum minus quam quisquam placeat consequatur. Itaque, architecto suscipit molestias quod ex officiis minus adipisci magnam. Minus, molestiae adipisci saepe. Eius, omnis, distinctio, consectetur illum in modi laborum quidem magni voluptatibus sequi tempore blanditiis nihil.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, eos, similique, molestias omnis corrupti iusto iure aperiam sunt doloremque accusantium ipsum ex quam tempore animi perferendis atque magnam. Molestias, voluptatibus, repellat, harum enim laborum iusto itaque maxime neque provident eaque magni aut blanditiis odit. Dolorem, tempora, dignissimos assumenda illo totam vel deserunt consequuntur delectus ipsa temporibus earum aliquam ea sunt error quas magni accusamus facere laborum minus quam quisquam placeat consequatur. Itaque, architecto suscipit molestias quod ex officiis minus adipisci magnam. Minus, molestiae adipisci saepe. Eius, omnis, distinctio, consectetur illum in modi laborum quidem magni voluptatibus sequi tempore blanditiis nihil.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      // var link = $("#ytp").attr('src');
+      
+      $('.tabs-head li').click(function() {
+        $('.tabs-head li').removeClass('active');
+        $(this).addClass('active');
+        $('.tabs-content .tab').removeClass('active');
+        $($(this).attr('data-target')).addClass('active');
+        // $("#ytp").attr('src', link);
+      });
+      
+      $('.hassubs .expand').click(function() {
+        $(this).parents('li').toggleClass('opened');
+      });
+      /* $('[data-target="#tab2"]').click(function() {
+        $("#ytp").attr('src', link + '?autoplay=1');
+      }); */
+    </script>
   </body>
 </html>
