@@ -1,6 +1,9 @@
 # Source maps
 *css.map
 
+# Debug scripts
+*-debug.js
+
 # Logs
 logs
 *.log
