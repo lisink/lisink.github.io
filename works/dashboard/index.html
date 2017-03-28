@@ -2,6 +2,13 @@
 <html>
   <head>
     <title>Dashboard</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W87RHFK');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700">
@@ -16,7 +23,7 @@
           theme: "minimal-dark"
         });
       });
-      
+
     </script>
   </head>
   <body>
@@ -502,7 +509,7 @@
     </div>
     <script>
       // var link = $("#ytp").attr('src');
-      
+
       $('.tabs-head li').click(function() {
         $('.tabs-head li').removeClass('active');
         $(this).addClass('active');
@@ -510,7 +517,7 @@
         $($(this).attr('data-target')).addClass('active');
         // $("#ytp").attr('src', link);
       });
-      
+
       $('.hassubs .expand').click(function() {
         $(this).parents('li').toggleClass('opened');
       });
