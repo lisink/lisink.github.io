@@ -20,8 +20,8 @@ header {
     margin-right: 20px; }
 
 .slogan-wrapper {
-  background-size: cover;
-  background: url(../i/slogan.png) center center no-repeat; }
+  background: url(../i/slogan.png) center center no-repeat;
+  background-size: cover; }
 
 .about-wrapper {
   background: #f7f7f7; }
