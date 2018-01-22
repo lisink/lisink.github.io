@@ -34,7 +34,8 @@ h1, h2, h3, h4 {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  background: url(../i/head.png) -384px -148px no-repeat; }
+  background-size: cover;
+  background: url(../i/head.png) center center no-repeat; }
   .head .slider-controls {
     float: right; }
   .head .slider-control {

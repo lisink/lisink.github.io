@@ -46,6 +46,7 @@ header, div[class$='container'] {
 .head {
   position: relative;
   background: url(../i/bg2.jpg) 0 0 no-repeat;
+  background-size: cover;
   color: #fff;
   overflow: hidden;
   min-height: 920px; }
