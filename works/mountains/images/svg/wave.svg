@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="81" height="7" preserveAspectRatio="xMidYMid">
+  <defs>
+    <style>
+      .cls-1 { fill: #191919; opacity: 0.2; fill-rule: evenodd; }
+    </style>
+  </defs>
+  <path d="M70.5 7l-5-5.2-5 5.2-5-5.2-5 5.2-5-5.2-5 5.2-5-5.2-5 5.2-5-5.2-5 5.2-5-5.2-5 5.2-5-5.2L1 6.5l-1-1L5.5 0l5 5.2 5-5.2 5 5.2 5-5.2 5 5.2 5-5.2 5 5.2 5-5.2 5 5.2 5-5.2 5 5.2 5-5.2 5 5.2 5-5.2L81 5.6l-1 1-4.5-4.8-5 5.2z" class="cls-1"/>
+</svg>

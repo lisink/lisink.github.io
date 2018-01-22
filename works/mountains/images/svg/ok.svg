@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38">
+  <defs>
+    <style>
+      .cls-z { fill: #404041; fill-rule: evenodd; }
+    </style>
+  </defs>
+  <path id="_1" d="M19 38a19 19 0 1 1 19-19 19 19 0 0 1-19 19zm0-35.6A16.6 16.6 0 1 0 35.6 19 16.6 16.6 0 0 0 19 2.4zm.6 24.2a1 1 0 0 1-.4.5 1.2 1.2 0 0 1-1.6 0L12 22a1.2 1.2 0 1 1 2-1.6l4 4L25.8 11a1.2 1.2 0 0 1 2 1.2z" data-name="1" class="cls-z"/>
+</svg>
