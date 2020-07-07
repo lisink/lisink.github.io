@@ -27,7 +27,11 @@
           console.log("Received message", message);
 
           if (message.type === "locationChange") {
-            history.pushState({}, "", message.pathname);
+            history.pushState(
+              {},
+              "",
+              window.location.pathname + message.pathname
+            );
           }
         },
       },
