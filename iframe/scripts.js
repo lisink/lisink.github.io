@@ -17,6 +17,8 @@
 
   document.body.appendChild(iframe);
 
+  const basePathname = window.location.pathname;
+
   if (iFrameResize) {
     iFrameResize(
       {
@@ -27,11 +29,7 @@
           console.log("Received message", message);
 
           if (message.type === "locationChange") {
-            history.pushState(
-              {},
-              "",
-              window.location.pathname + message.pathname
-            );
+            history.pushState({}, "", basePathname + message.pathname);
           }
         },
       },
