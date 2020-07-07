@@ -19,16 +19,14 @@
   document.body.appendChild(iframe);
 
 
-  var concatUrls = (...urls) => {
+  var concatUrls = ([urls]) => {
     var repeatingSlashesRegex = /\/{2,}/g;
 
     return urls
       .filter(Boolean)
       .join('/')
       .replace(repeatingSlashesRegex, '/');
-  };
-
-  export default concatUrls;
+  }
 
 
   if (iFrameResize) {
@@ -41,7 +39,7 @@
           console.log("Received message", message);
 
           if (message.type === "locationChange") {
-            history.pushState({}, "", concatUrls(basePathname, message.pathname);
+            history.pushState({}, "", concatUrls([basePathname, message.pathname]);
           }
         },
       },
