@@ -21,7 +21,7 @@
 
   console.log("internal route", route);
 
-  iframe.src = concatUrls(["http://localhost:3000/", route]);
+  iframe.src = concatUrls(["http://localhost:3000", route]);
 
   iframe.id = "fmp_iframe";
 
