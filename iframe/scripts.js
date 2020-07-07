@@ -19,7 +19,7 @@
   var iframe = document.createElement("iframe");
 
   var route = localStorage
-    .getItem("redirectPathname", path)
+    .getItem("redirectPathname")
     .replace(basePathname, "");
 
   console.log("internal route", route);
