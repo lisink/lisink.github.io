@@ -5,6 +5,7 @@
   if (!thisScript) return;
 
   var clientId = thisScript.getAttribute("data-client-id");
+  var basePathname = thisScript.getAttribute("data-base-pathname");
 
   if (!clientId) return;
 
@@ -17,7 +18,18 @@
 
   document.body.appendChild(iframe);
 
-  const basePathname = window.location.pathname;
+
+  var concatUrls = (...urls) => {
+    var repeatingSlashesRegex = /\/{2,}/g;
+
+    return urls
+      .filter(Boolean)
+      .join('/')
+      .replace(repeatingSlashesRegex, '/');
+  };
+
+  export default concatUrls;
+
 
   if (iFrameResize) {
     iFrameResize(
@@ -29,7 +41,7 @@
           console.log("Received message", message);
 
           if (message.type === "locationChange") {
-            history.pushState({}, "", basePathname + message.pathname);
+            history.pushState({}, "", concatUrls(basePathname, message.pathname);
           }
         },
       },
