@@ -17,9 +17,7 @@
 
   var iframe = document.createElement("iframe");
 
-  const route = window.location.pathname.slice(
-    window.location.pathname.indexOf(basePathname)
-  );
+  const route = window.location.pathname.replace(basePathname, "");
 
   console.log("internal route", route);
 
