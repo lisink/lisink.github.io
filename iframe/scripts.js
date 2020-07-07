@@ -1,24 +1,27 @@
 (function () {
+  var thisScript = document.getElementById(thisScriptId);
+  if (!thisScript) return;
+
   var iframeBaseSrc = "http://localhost:3000";
+  var thisScriptId = "iframe_script";
+
   var concatUrls = function (urls) {
     var repeatingSlashesRegex = /\/{2,}/g;
 
     return urls.filter(Boolean).join("/").replace(repeatingSlashesRegex, "/");
   };
 
-  var thisScriptId = "iframe_script";
-  var thisScript = document.getElementById(thisScriptId);
-
-  if (!thisScript) return;
-
   var clientId = thisScript.getAttribute("data-client-id");
-  var basePathname = thisScript.getAttribute("data-base-pathname");
 
   if (!clientId) return;
+
+  var basePathname = thisScript.getAttribute("data-base-pathname");
 
   var iframe = document.createElement("iframe");
 
   var route = localStorage.getItem("redirectPathname");
+
+  console.log("internal route", route);
 
   if (route) {
     localStorage.removeItem("redirectPathname");
@@ -26,8 +29,6 @@
   }
 
   route = route ? route.replace(basePathname, "") : "";
-
-  console.log("internal route", route);
 
   iframe.src = iframeBaseSrc + route;
   iframe.id = "fmp_iframe";

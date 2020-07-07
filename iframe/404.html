@@ -1,7 +1,5 @@
 <script>
-  var path = window.location.pathname;
-
-  localStorage.setItem('redirectPathname', path);
+  localStorage.setItem('redirectPathname', window.location.pathname);
 
   window.location.pathname = '/iframe';
 </script>
