@@ -1,5 +1,5 @@
 (function () {
-  var iframeSrc = "http://localhost:3000";
+  var iframeBaseSrc = "http://localhost:3000";
   var concatUrls = function (urls) {
     var repeatingSlashesRegex = /\/{2,}/g;
 
@@ -18,13 +18,12 @@
 
   var iframe = document.createElement("iframe");
 
-  var route = localStorage
-    .getItem("redirectPathname")
-    .replace(basePathname, "");
+  var route = localStorage.getItem("redirectPathname");
+  route = route ? route.replace(basePathname, "") : "";
 
   console.log("internal route", route);
 
-  iframe.src = route ? iframeSrc + route : iframeSrc;
+  iframe.src = iframeBaseSrc + route;
   iframe.id = "fmp_iframe";
 
   document.body.appendChild(iframe);
