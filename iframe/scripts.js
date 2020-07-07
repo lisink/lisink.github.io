@@ -31,7 +31,7 @@
 
   route = route ? route.replace(basePathname, "") : "";
 
-  iframe.src = iframeBaseSrc + route;
+  iframe.src = iframeBaseSrc + route + "?iframe=1&clientId=" + clientId;
   iframe.id = "fmp_iframe";
 
   document.body.appendChild(iframe);
