@@ -1,4 +1,5 @@
 (function () {
+  var iframeSrc = "http://localhost:3000";
   var concatUrls = function (urls) {
     var repeatingSlashesRegex = /\/{2,}/g;
 
@@ -23,8 +24,7 @@
 
   console.log("internal route", route);
 
-  iframe.src = concatUrls(["http://localhost:3000", route]);
-
+  iframe.src = route ? iframeSrc + route : iframeSrc;
   iframe.id = "fmp_iframe";
 
   document.body.appendChild(iframe);
