@@ -19,6 +19,12 @@
   var iframe = document.createElement("iframe");
 
   var route = localStorage.getItem("redirectPathname");
+
+  if (route) {
+    localStorage.removeItem("redirectPathname");
+    history.pushState({}, "", route);
+  }
+
   route = route ? route.replace(basePathname, "") : "";
 
   console.log("internal route", route);
