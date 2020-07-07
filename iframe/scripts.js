@@ -1,9 +1,10 @@
 (function () {
+  var thisScriptId = "iframe_script";
+
   var thisScript = document.getElementById(thisScriptId);
   if (!thisScript) return;
 
   var iframeBaseSrc = "http://localhost:3000";
-  var thisScriptId = "iframe_script";
 
   var concatUrls = function (urls) {
     var repeatingSlashesRegex = /\/{2,}/g;
