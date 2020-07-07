@@ -1,4 +1,10 @@
 (function () {
+  var concatUrls = function (urls) {
+    var repeatingSlashesRegex = /\/{2,}/g;
+
+    return urls.filter(Boolean).join("/").replace(repeatingSlashesRegex, "/");
+  };
+
   var thisScriptId = "iframe_script";
   var thisScript = document.getElementById(thisScriptId);
 
@@ -9,20 +15,19 @@
 
   if (!clientId) return;
 
-  console.log(clientId);
-
   var iframe = document.createElement("iframe");
-  iframe.src = "http://localhost:3000/";
+
+  const route = window.location.pathname.slice(
+    window.location.pathname.indexOf(basePathname)
+  );
+
+  console.log("internal route", route);
+
+  iframe.src = concatUrls(["http://localhost:3000/", route]);
 
   iframe.id = "fmp_iframe";
 
   document.body.appendChild(iframe);
-
-  var concatUrls = function (urls) {
-    var repeatingSlashesRegex = /\/{2,}/g;
-
-    return urls.filter(Boolean).join("/").replace(repeatingSlashesRegex, "/");
-  };
 
   if (iFrameResize) {
     iFrameResize(
