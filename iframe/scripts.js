@@ -11,7 +11,7 @@
   console.log(clientId);
 
   var iframe = document.createElement("iframe");
-  iframe.src = "http://c5d69c01b4ea.ngrok.io";
+  iframe.src = "http://localhost:3000/";
 
   iframe.id = "fmp_iframe";
 
@@ -19,7 +19,18 @@
 
   if (iFrameResize) {
     iFrameResize(
-      { log: true, heightCalculationMethod: "taggedElement" },
+      {
+        log: true,
+        heightCalculationMethod: "taggedElement",
+
+        onMessage: ({ iframe, message }) => {
+          console.log("Received message", message);
+
+          if (message.type === "locationChange") {
+            history.pushState({}, "", message.pathname);
+          }
+        },
+      },
       iframe
     );
   }
