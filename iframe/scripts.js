@@ -21,8 +21,8 @@
   }
 
   function initIframe() {
-    // var iframeBaseSrc = "http://localhost:3000";
-    var iframeBaseSrc = "http://874ee104f223.ngrok.io";
+    var iframeBaseSrc = "http://localhost:3000";
+    // var iframeBaseSrc = "http://874ee104f223.ngrok.io";
     var clientId = currentScript.getAttribute("data-client-id");
 
     if (!clientId) return;
