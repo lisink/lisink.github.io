@@ -21,8 +21,8 @@
   }
 
   function initIframe() {
-    var iframeBaseSrc = "http://localhost:3000";
-    // var iframeBaseSrc = "http://874ee104f223.ngrok.io";
+    // var iframeBaseSrc = "http://localhost:3000";
+    var iframeBaseSrc = "http://d8ce61447f44.ngrok.io";
     var clientId = currentScript.getAttribute("data-client-id");
 
     if (!clientId) return;
@@ -38,6 +38,8 @@
 
     innerRoute = innerRoute ? innerRoute.replace(basePathname, "") : "";
 
+    iframe.style.cssText =
+      "width: 1px; min-width: 100%; margin: 0; border: 0; display: block;";
     iframe.id = "fmp_iframe";
     iframe.src = iframeBaseSrc + innerRoute + "?iframe=1&clientId=" + clientId;
 
