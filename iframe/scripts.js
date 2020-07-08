@@ -48,7 +48,7 @@
         log: true,
         heightCalculationMethod: "taggedElement",
         onMessage: (event) => {
-          var message = event.iframe;
+          var message = event.message;
 
           if (message.type === "locationChange") {
             history.pushState(
