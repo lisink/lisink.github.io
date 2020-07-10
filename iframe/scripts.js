@@ -28,7 +28,7 @@
   }
 
   function initIframe() {
-    var iframeBaseSrc = "test.funeral-market.place";
+    var iframeBaseSrc = getIframeDomain(currentScript.getAttribute("src"));
     var clientId = currentScript.getAttribute("data-client-id");
 
     if (!clientId) return;
