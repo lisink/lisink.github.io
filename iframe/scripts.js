@@ -28,43 +28,53 @@
   }
 
   function initIframe() {
-    var iframeBaseSrc = getIframeDomain(currentScript.getAttribute("src"));
+    var iframeBaseSrc = "//test.funeral-market.place";
     var clientId = currentScript.getAttribute("data-client-id");
 
     if (!clientId) return;
 
     var basePathname = currentScript.getAttribute("data-base-pathname");
-    var iframe = document.createElement("iframe");
-    var innerRoute = localStorage.getItem("redirectPathname");
+    var maxWidth = currentScript.getAttribute("data-max-width");
+    var role = currentScript.getAttribute("data-role");
+    var containerId = currentScript.getAttribute("data-container-id");
 
-    if (innerRoute) {
-      localStorage.removeItem("redirectPathname");
-      history.pushState({}, "", innerRoute);
-    }
+    var iframe = document.createElement("iframe");
+    var queryStringIndex = location.href.indexOf("?l=");
+    var innerRoute =
+      queryStringIndex > -1 ? location.href.slice(queryStringIndex + 3) : "";
 
     innerRoute = innerRoute ? innerRoute.replace(basePathname, "") : "";
 
     iframe.style.cssText =
-      "width: 1px; min-width: 100%; margin: 0; border: 0; display: block;";
+      "width: 100%; margin: 0; margin: 0 auto; border: 0; display: block;" +
+      (maxWidth ? "max-width:" + maxWidth + "px;" : "");
+
     iframe.id = "fmp_iframe";
     iframe.src =
-      "//" + iframeBaseSrc + innerRoute + "?iframe=1&clientId=" + clientId;
+      "//" +
+      iframeBaseSrc +
+      innerRoute +
+      "?iframe=1&clientId=" +
+      clientId +
+      "&clientRole=" +
+      role;
 
-    document.body.appendChild(iframe);
+    const parentElement = document.getElementById(containerId) || document.body;
+
+    parentElement.appendChild(iframe);
 
     if (iFrameResize) {
       var iframeResizeOptions = {
-        log: true,
         heightCalculationMethod: "taggedElement",
         onMessage: (event) => {
           var message = event.message;
 
           switch (message.type) {
             case "locationChange":
-              history.pushState(
+              history.replaceState(
                 {},
                 "",
-                concatUrls([basePathname, message.pathname])
+                basePathname + "?l=" + message.pathname
               );
               break;
 
